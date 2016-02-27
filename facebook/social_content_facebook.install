@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Social content facebook installation.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function social_content_facebook_uninstall() {
+  Drupal::configFactory()->getEditable('field.storage.node.facebook_link')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.facebook_external_id')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.facebook_picture')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.facebook.body')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.facebook.facebook_external_id')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.facebook.facebook_link')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.facebook.facebook_picture')->delete();
+  Drupal::configFactory()->getEditable('node.type.facebook')->delete();
+}

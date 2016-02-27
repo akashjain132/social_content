@@ -1,0 +1,6 @@
+name: Facebook
+description: 'Imports content from Facebook.'
+type: module
+package: Social Content
+core: 8.x
+version: '8.x-1.0-alpha1'

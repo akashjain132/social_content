@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.facebook_picture
+    - node.type.facebook
+  module:
+    - node
+id: node.facebook.facebook_picture
+field_name: facebook_picture
+entity_type: node
+bundle: facebook
+label: Picture
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: image

@@ -1,0 +1,23 @@
+social_content.list_page:
+  path: '/admin/config/services/social-content/global'
+  defaults:
+    _controller: '\Drupal\social_content\Controller\SocialContent::overView'
+    _title: 'Social Content'
+  requirements:
+    _permission: 'administer social content'
+
+social_content.list_instance:
+  path: '/admin/config/services/social-content/global/{instance}/list'
+  defaults:
+    _controller: '\Drupal\social_content\Controller\SocialContentListInstance::overView'
+    _title_callback: '\Drupal\social_content\Controller\SocialContentListInstance::getPageTitle'
+  requirements:
+    _permission: 'administer social content'
+
+social_content.add_instance:
+  path: '/admin/config/services/social-content/global/{instance}/add'
+  defaults:
+    _controller: '\Drupal\social_content\Controller\SocialContentAddInstance::overView'
+    _title_callback: '\Drupal\social_content\Controller\SocialContentAddInstance::getPageTitle'
+  requirements:
+    _permission: 'administer social content'

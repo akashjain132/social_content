@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Facebook Page Post'
+type: facebook
+description: 'A post imported from <em>Facebook</em>.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
